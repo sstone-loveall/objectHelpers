@@ -72,7 +72,7 @@ namespace Machineghost.ObjectHelpers.Extensions
 			{
 				// if value is not already typed DateTime, convert to string and attempt to parse
 				var strValue = value.ToNullSafeString();
-				if (!DateTime.TryParseExact(strValue, DateTimeConstants.SQL_DATE_TIME_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out outDateTime)
+				if (!DateTime.TryParseExact(strValue, DateTimeConstants.DATE_TIME_WITH_MILLISECONDS_FORMAT, CultureInfo.InvariantCulture, DateTimeStyles.None, out outDateTime)
 					&& !DateTime.TryParse(strValue, out outDateTime))
 					outDateTime = defaultValue;
 			}

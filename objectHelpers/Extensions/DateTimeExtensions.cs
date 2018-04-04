@@ -49,7 +49,7 @@ namespace Machineghost.ObjectHelpers.Extensions
 		/// </summary>
 		public static string ToStringWithMilliseconds(this DateTime dateTimeObject)
 		{
-			return dateTimeObject.ToString(DateTimeConstants.SQL_DATE_TIME_FORMAT);
+			return dateTimeObject.ToString(DateTimeConstants.DATE_TIME_WITH_MILLISECONDS_FORMAT);
 		}
 
 		/// <summary>

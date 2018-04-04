@@ -8,6 +8,6 @@
 		/// <summary>
 		/// SQL DateTime formatting string.
 		/// </summary>
-		public const string SQL_DATE_TIME_FORMAT = "MM/dd/yyyy HH:mm:ss:fff";
+		public const string DATE_TIME_WITH_MILLISECONDS_FORMAT = "MM/dd/yyyy HH:mm:ss:fff";
 	}
 }
